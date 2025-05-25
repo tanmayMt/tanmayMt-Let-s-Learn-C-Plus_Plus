@@ -1,12 +1,13 @@
-#include<stdio.h>
+#include <stdio.h>
 int hi()
 {
-    printf("This is hi()\n");
+    printf("C: This is hi()\n");
 }
-int main()
+void main()
+// int main()
 {
-    printf("Hello\n");
-    int x=hi();
-    printf("%d",x);
+    printf("Retun in c: Hello\n");
+    int x = hi();
+    printf("%d", x);
     // return(0);
 }

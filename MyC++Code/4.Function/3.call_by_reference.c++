@@ -1,21 +1,23 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-void swap(int &,int &);
-void swap(int &x,int &y)
+void swap(int &, int &);
+void swap(int &x, int &y)
 {
     int temp;
-    temp=x;
-    x=y;
-    y=temp;
-
+    temp = x;
+    x = y;
+    y = temp;
 }
 int main()
 {
-    int a,b;
-    cout<<"Enter two number for swapping:";
-    cin>>a>>b;
+    int a, b;
+    cout << "Enter two number for swapping:";
+    cin >> a >> b;
 
-    cout<<"Before swapping a="<<a<<" b="<<b<<endl;
-    swap(a,b);
-    cout<<"After swapping a="<<a<<" b="<<b<<endl;
+    cout << "Before swapping a=" << a << " b=" << b << endl;
+
+    // Call by reference
+    swap(a, b);
+
+    cout << "After swapping a=" << a << " b=" << b << endl;
 }
