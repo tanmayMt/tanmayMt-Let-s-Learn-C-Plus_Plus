@@ -25,7 +25,7 @@ int main()
     //     vi.push_back(x);
     // }
     // display(vi);
-
+    // vi.push_back(6.8);
     // // Change an element in a vector at index position 2 :
     // vector<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
     // cars.at(2) = "Toyota";
@@ -56,14 +56,46 @@ int main()
     // cout << *it;
 
     // //Remove an element from a vector
-    vector<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
-    cars.erase(cars.begin() + 1, cars.end() - 1);
-    for (string car : cars)
-        cout << car << "\n";
+    // vector<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
+    // cars.erase(cars.begin() + 1, cars.end() - 1);
+    // for (string car : cars)
+    //     cout << car << " ";
 
-    // vi.push_back(6.8);
-    // remove element
-    // vi.erase(6, 7);
-    // display(vi);
+    // // Access the memory block used by the vector at specified index position
+    // vector<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
+    // string *data = cars.data();
+    // cout << data[3];
+
+    // // Insert an element into a vector
+    // vector<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
+    // cars.insert(cars.begin() + 2, "Toyota");
+    // for (string car : cars)
+    //     cout << car << " ";
+
+    // // Insert a value multiple times:
+    // vector<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
+    // cars.insert(cars.begin() + 2, 3, "Toyota");
+    // Insert a value 3 times
+    // for (string car : cars)
+    //     cout << car << " ";
+
+    // // Change the size of a vector :
+    // vector<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
+    // cars.resize(2);
+    // for (string car : cars)
+    //     cout << car << " ";
+
+    // //Swap the contents of two vectors
+    vector<string> cars = {"Volvo", "BMW", "Ford", "Mazda"};
+    vector<string> fruits = {"Apple", "Banana", "Cherry", "Orange"};
+    cars.swap(fruits);
+    cout << "Cars: ";
+    for (string car : cars)
+        cout << car << " ";
+
+    cout << "\nFruits: ";
+    for (string fruit : fruits)
+        cout << fruit << " ";
+
     return 0;
 }
